@@ -8,8 +8,6 @@ A responsive, animated info panel component for Flutter that displays informatio
 
 ## Demo
 
-https://github.com/user-attachments/assets/dvvx6j
-
 [![Watch Demo Video](https://img.shields.io/badge/Watch-Demo%20Video-red?style=for-the-badge&logo=youtube)](https://streamable.com/dvvx6j)
 
 https://github.com/user-attachments/assets/dvvx6j

